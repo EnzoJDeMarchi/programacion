@@ -1,0 +1,74 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1031pt" height="162pt" viewBox="0.00 0.00 1030.51 161.80">
+<g id="graph0" class="graph" transform="translate(-4.376927809609555,119.47016122776493) scale(0.7578582832552)" data-name="UML">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-157.8 1026.51,-157.8 1026.51,4 -4,4" style=""/>
+<!-- NaveJugador -->
+<g id="node1" class="node" pointer-events="visible" data-name="NaveJugador">
+
+<polygon fill="none" stroke="black" points="4.68,-0.5 4.68,-58.9 317.64,-58.9 317.64,-0.5 4.68,-0.5" style=""/>
+<text text-anchor="middle" x="54.31" y="-25.5" font-family="Helvetica,sans-Serif" font-size="14.00" style="">NaveJugador</text>
+<polyline fill="none" stroke="black" points="103.95,-0.5 103.95,-58.9" style=""/>
+<text text-anchor="start" x="111.95" y="-42.3" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- vida: float</text>
+<text text-anchor="start" x="111.95" y="-25.5" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> - velocidad: float</text>
+<text text-anchor="start" x="111.95" y="-8.7" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> - arma: Arma</text>
+<polyline fill="none" stroke="black" points="225.79,-0.5 225.79,-58.9" style=""/>
+<text text-anchor="start" x="233.79" y="-42.3" font-family="Helvetica,sans-Serif" font-size="14.00" style="">+ moverse()</text>
+<text text-anchor="start" x="233.79" y="-25.5" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> + girar()</text>
+<text text-anchor="start" x="233.79" y="-8.7" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> + disparar()</text>
+</g>
+<!-- Arma -->
+<g id="node3" class="node" pointer-events="visible" data-name="Arma">
+
+<polygon fill="none" stroke="black" points="376.98,-0.5 376.98,-58.9 633.12,-58.9 633.12,-0.5 376.98,-0.5" style=""/>
+<text text-anchor="middle" x="401.71" y="-25.5" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Arma</text>
+<polyline fill="none" stroke="black" points="426.43,-0.5 426.43,-58.9" style=""/>
+<text text-anchor="start" x="434.43" y="-42.3" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- daño: float</text>
+<text text-anchor="start" x="434.43" y="-25.5" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> - cadencia: float</text>
+<text text-anchor="start" x="434.43" y="-8.7" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> - precision: float</text>
+<polyline fill="none" stroke="black" points="545.15,-0.5 545.15,-58.9" style=""/>
+<text text-anchor="start" x="553.15" y="-25.5" font-family="Helvetica,sans-Serif" font-size="14.00" style="">+ disparar()</text>
+</g>
+<!-- NaveJugador&#45;&gt;Arma -->
+<g id="edge1" class="edge" data-name="NaveJugador-&gt;Arma">
+
+<path fill="none" stroke="black" d="M317.6,-29.7C333.64,-29.7 349.86,-29.7 365.7,-29.7" style=""/>
+<polygon fill="black" stroke="black" points="365.64,-33.2 375.64,-29.7 365.64,-26.2 365.64,-33.2" style=""/>
+<text text-anchor="middle" x="349.65" y="-33.9" font-family="Times,serif" font-size="14.00" style="">usa</text>
+</g>
+<!-- NaveEnemiga -->
+<g id="node2" class="node" pointer-events="visible" data-name="NaveEnemiga">
+
+<polygon fill="none" stroke="black" points="0,-78.1 0,-153.3 322.32,-153.3 322.32,-78.1 0,-78.1" style=""/>
+<text text-anchor="middle" x="51.97" y="-111.5" font-family="Helvetica,sans-Serif" font-size="14.00" style="">NaveEnemiga</text>
+<polyline fill="none" stroke="black" points="103.94,-78.1 103.94,-153.3" style=""/>
+<text text-anchor="start" x="111.94" y="-136.7" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- vida: float</text>
+<text text-anchor="start" x="111.94" y="-119.9" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> - velocidad: float</text>
+<text text-anchor="start" x="111.94" y="-103.1" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> - ataque: float</text>
+<text text-anchor="start" x="111.94" y="-86.3" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> - defensa: float</text>
+<polyline fill="none" stroke="black" points="225.77,-78.1 225.77,-153.3" style=""/>
+<text text-anchor="start" x="233.77" y="-119.9" font-family="Helvetica,sans-Serif" font-size="14.00" style="">+ atacar()</text>
+<text text-anchor="start" x="233.77" y="-103.1" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> + defender()</text>
+</g>
+<!-- Proyectil -->
+<g id="node4" class="node" pointer-events="visible" data-name="Proyectil">
+
+<polygon fill="none" stroke="black" points="709.55,-0.5 709.55,-58.9 1022.51,-58.9 1022.51,-0.5 709.55,-0.5" style=""/>
+<text text-anchor="middle" x="744.39" y="-25.5" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Proyectil</text>
+<polyline fill="none" stroke="black" points="779.23,-0.5 779.23,-58.9" style=""/>
+<text text-anchor="start" x="787.23" y="-42.3" font-family="Helvetica,sans-Serif" font-size="14.00" style="">- velocidad: float</text>
+<text text-anchor="start" x="787.23" y="-25.5" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> - radioExplosion: float</text>
+<text text-anchor="start" x="787.23" y="-8.7" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> - efecto: string</text>
+<polyline fill="none" stroke="black" points="933.75,-0.5 933.75,-58.9" style=""/>
+<text text-anchor="start" x="941.75" y="-33.9" font-family="Helvetica,sans-Serif" font-size="14.00" style="">+ lanzar()</text>
+<text text-anchor="start" x="941.75" y="-17.1" font-family="Helvetica,sans-Serif" font-size="14.00" style=""> + detonar()</text>
+</g>
+<!-- Arma&#45;&gt;Proyectil -->
+<g id="edge2" class="edge" data-name="Arma-&gt;Proyectil">
+
+<path fill="none" stroke="black" d="M633.12,-29.7C654.25,-29.7 676.43,-29.7 698.36,-29.7" style=""/>
+<polygon fill="black" stroke="black" points="698.29,-33.2 708.29,-29.7 698.29,-26.2 698.29,-33.2" style=""/>
+<text text-anchor="middle" x="671.34" y="-33.9" font-family="Times,serif" font-size="14.00" style="">dispara</text>
+</g>
+</g>
+</svg>
