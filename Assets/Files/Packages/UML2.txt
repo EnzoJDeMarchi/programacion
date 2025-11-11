@@ -1,0 +1,12 @@
+digraph UML {
+    rankdir=LR
+    node [shape=record, fontname=Helvetica]
+
+    NaveJugador [label="{NaveJugador| - vida: float\l - velocidad: float\l - arma: Arma\l| + moverse()\l + girar()\l + disparar()\l}"]
+    NaveEnemiga [label="{NaveEnemiga| - vida: float\l - velocidad: float\l - ataque: float\l - defensa: float\l| + atacar()\l + defender()\l}"]
+    Arma [label="{Arma| - daño: float\l - cadencia: float\l - precision: float\l| + disparar()\l}"]
+    Proyectil [label="{Proyectil| - velocidad: float\l - radioExplosion: float\l - efecto: string\l| + lanzar()\l + detonar()\l}"]
+
+    NaveJugador -> Arma [label="usa"]
+    Arma -> Proyectil [label="dispara"]
+}

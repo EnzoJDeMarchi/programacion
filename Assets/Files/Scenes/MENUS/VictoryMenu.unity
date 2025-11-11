@@ -441,9 +441,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 761198137}
+      - m_Target: {fileID: 1626756315}
         m_TargetAssemblyTypeName: VictoryMenu, Assembly-CSharp
-        m_MethodName: GoToMainMenu
+        m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -491,50 +491,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656076072}
   m_CullTransparentMesh: 1
---- !u!1 &761198136
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 761198138}
-  - component: {fileID: 761198137}
-  m_Layer: 0
-  m_Name: VictoryMenuManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &761198137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761198136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59ec8bd6161fc64b989357348783971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &761198138
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761198136}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 347.57965, y: 218.41748, z: 1.4598001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1130396825
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +581,7 @@ GameObject:
   - component: {fileID: 1626756312}
   - component: {fileID: 1626756314}
   - component: {fileID: 1626756313}
+  - component: {fileID: 1626756315}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -691,6 +648,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626756311}
   m_CullTransparentMesh: 1
+--- !u!114 &1626756315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626756311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38556f6253298b34385ecc197ef1d581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VictoryMenu
 --- !u!1 &1677793511
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,9 +743,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 761198137}
+      - m_Target: {fileID: 1626756315}
         m_TargetAssemblyTypeName: VictoryMenu, Assembly-CSharp
-        m_MethodName: PlayAgain
+        m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1195,4 +1164,3 @@ SceneRoots:
   - {fileID: 1929499987}
   - {fileID: 429083119}
   - {fileID: 1130396828}
-  - {fileID: 761198138}
